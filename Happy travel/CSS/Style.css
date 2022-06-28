@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    max-width: 150px;
+
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00ccff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #00ccff;
+    background: #00ccff;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #00ccff;
+        height: 100vh;
+        width: -300px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+
+    }
+}
+
+/*--------------- Zonvakantie--------------*/
+.sub-header1 {
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(../images/zonvakantie.jpg);
+    background-position: center;
+    background-size: cover;
+   
+}
+
+/*---------Lastminute----------*/
+.sub-header2 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(../images/last\ minute.jfif);
+    background-position: center;
+    background-size: cover;
+   
+}
+
+/*---------verrereizen----------*/
+.sub-header3 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(../images/verre\ reizen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*---------Vliegtickets----------*/
+.sub-header4 {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(../images/ticket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*---------Stedentrips----------*/
+.sub-header5 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(../images/steden\ trips.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*---------contact---------*/
+.sub-header6 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url(../images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text p {
+    margin-left: 5px;
+    font-size: 14px;
+
+}
+
+
+.contact-col input,
+.contact-col textarea {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.red-btn {
+    border: 1px solid #00ccff;
+    background: transparent;
+    color: #00ccff;
+}
+
+.red-btn:hover {
+    color: white;
+}
+
+
+
+
+
+/*-------Footer-----*/
+.footercontainer {
+    background-color: #212329;
+    padding-bottom: 4rem;
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #212329;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer h2 {
+    margin-left: 100px;
+}
+
+.footer a {
+    margin-left: 100px;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+}
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: #00ccff;
+    transition: 0.3s ease-out;
+}
+
+.copyright {
+    width: 100%;
+    height: 11vh;
+    background-color: #212329;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width:700px) {
+    .footer {
+        height: 100vh;
+        padding-top: 2rem;
+    }
+}

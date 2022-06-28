@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happytravel|contact</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="icon" href="../images/favicon.ico" Type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="sub-header6">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Zonvakantie.html">Zonvakantie</a></li>
+                    <li><a href="Lastminute.html">Lastminute</a></li>
+                    <li><a href="verrereizen.html">Verre Reizen</a></li>
+                    <li><a href="Vliegtickets.html">Vliegtickets</a></li>
+                    <li><a href="Stedentrips.html">Stedentrips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <br>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+    <!-------------- contact ------------->
+    <section>
+        <div class="text">
+            <h1>Contact</h1>
+            <p>
+                We helpen je graag op weg om voor jou de best passende reis te vinden.
+                Je kunt als volgt contact met ons opnemen:
+                <br><br>
+                Telefonisch:
+                <br><br>
+                Van maandag t/m vrijdag zijn wij telefonisch bereikbaar tussen 9h30-17h30 via 0123456789.
+                <br><br>
+                Indien je onze voicemail krijgt, laat dan graag even een berichtje achter, waarschijnlijk zijn we in
+                gesprek.
+                Wij nemen dan z.s.m. contact met je op.
+
+                <br><br>
+                In zeer urgente gevallen buiten kantooruren sms 'URGENT' naar: 06-12345678</p>
+            <br>
+        </div>
+        <div class="contact-col">
+            <form action="mailto: 217538@edu.rocfriesepoort.nl" enctype="text/plain" method="POST">
+                <input id="Name" type="text" name="Name" placeholder="Enter your name" required />
+                <input id="Email" type="email" name="email" placeholder="Enter your email address" required />
+                <input id="age" type="number" name="age" placeholder="Enter your age" required />
+                <input id="number" type="tel" name="number" placeholder="Enter your phonenumber" pattern="^\d{10}$"
+                    required />
+                <input id="Subject" type="text" name="subject" placeholder="Enter your subject" required />
+                <textarea name="message" placeholder="Message" id="Message" cols="28" rows="10" required></textarea>
+                <br>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+
+
+
+        </div>
+
+    </section>
+    <!-----Footer----->
+    <br>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2><u>About Us</h2></u>
+                <a href="Zonvakantie.html">Zonvakantie</a>
+                <a href="Lastminute.html">Lastminute</a>
+                <a href="verrereizen.html">Verre Reizen</a>
+                <a href="Vliegtickets.html">Vliegtickets</a>
+                <a href="Stedentrips.html">Stedentrips</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2><u>Contact Us</h2></u>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2><u>Social Media</h2></u>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <h5>Copyright. All right reserved by VirusXDragon&copy;</h5>
+
+
+        <!-----JavaScript for Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0px";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-300px";
+            }
+        </script>
+</body>
+
+</html>

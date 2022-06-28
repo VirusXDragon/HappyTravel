@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happytravel|Stedentrips</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="icon" href="../images/favicon.ico" Type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="sub-header5">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Zonvakantie.html">Zonvakantie</a></li>
+                    <li><a href="Lastminute.html">Lastminute</a></li>
+                    <li><a href="verrereizen.html">Verre Reizen</a></li>
+                    <li><a href="Vliegtickets.html">Vliegtickets</a></li>
+                    <li><a href="Stedentrips.html">Stedentrips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <br>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+    <!-----Footer----->
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="Zonvakantie.html">Zonvakantie</a>
+                <a href="Lastminute.html">Lastminute</a>
+                <a href="verrereizen.html">Verre Reizen</a>
+                <a href="Vliegtickets.html">Vliegtickets</a>
+                <a href="Stedentrips.html">Stedentrips</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <h5>Copyright. All right reserved by VirusXDragon&copy;</h5>
+
+        <!-----JavaScript for Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0px";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-300px";
+            }
+        </script>
+</body>
+
+</html>
